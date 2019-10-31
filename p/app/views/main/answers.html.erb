@@ -1,0 +1,13 @@
+<%= form_tag(music_path, :method => "get") do %>
+    <%= label_tag(:music, "What is your favorite song:") %>
+    <%= text_field_tag(:music) %>
+    <%= submit_tag("Go") %>
+<% end %>
+
+
+
+<ul>
+    <li><%=link_to @jesus_answers[0], tvshows_path%></li>
+    <li><%=@jesus_answers[1] %></li>
+    <li><%=@jesus_answers[2] %></li>
+</ul>
